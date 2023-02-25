@@ -91,19 +91,21 @@ nav a:nth-child(6)::before {
 }
 
 /* Annoucement */
-.annoucements {
+.announcements {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     line-height: 20px;
+    margin-top: -5px;
 }
-.annoucements p {
+.announcements p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
 }
-.annoucements p:first-child {
-    margin-top: -5px;
+.pin {
+    filter: grayscale(100%);
+    display: inline-block;
 }
 
 /* Headings */
@@ -156,9 +158,7 @@ figcaption {
     font-size: 12px;
     line-height: 16px;
 }
-.pin {
-    filter: grayscale(100%);
-}
+
 .info-field, code {
     font-family: monospace;
     font-size: 14px;
