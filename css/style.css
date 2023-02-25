@@ -24,10 +24,12 @@ header {
     justify-items: end;
 }
 header p {
+    font-size: 20px;
+    line-height: 30px;
     margin-top: 0;
     margin: initial;
     width: 100%;
-    margin-top: -8px;
+    margin-top: -5px;
 }
 
 /* Navigation */
@@ -63,24 +65,28 @@ nav a::before {
     height: 15px;
     display: inline-block;
 }
-/* Services */
+/* About */
 nav a:nth-child(1)::before {
+    background-color: #9e53b3;
+}
+/* Services */
+nav a:nth-child(2)::before {
     background-color: #035A82;
 }
 /* Testimonals */
-nav a:nth-child(2)::before {
+nav a:nth-child(3)::before {
     background-color: #d04109;
 }
 /* Clients */
-nav a:nth-child(3)::before {
+nav a:nth-child(4)::before {
     background-color: #178c34;
 }
 /* Contact */
-nav a:nth-child(4)::before {
+nav a:nth-child(5)::before {
     background-color: #9c9c9c;
 }
 /* Availability */
-nav a:nth-child(5)::before {
+nav a:nth-child(6)::before {
     background-color: #dddd07;
 }
 
@@ -173,7 +179,6 @@ code {
 /* Projects */
 #projects {
     display: flex;
-    justify-content: ;
     align-items: left;
     flex-flow: row wrap;
     gap: 20px;
@@ -184,7 +189,6 @@ code {
     text-decoration: none;
     display: flex;
     flex-flow: column;
-    /* background-color: #e4eef3; */
     max-width: 200px;
 }
 #projects a span.label {
@@ -222,6 +226,15 @@ footer p {
 @media(max-width: 700px) {
     header {
         grid-template-columns: 1fr;
+    }
+    header p {
+        margin-top: 0;
+    }
+    #projects {
+        gap: 25px;
+    }
+    #projects a {
+        max-width: 100%;
     }
 }
 
